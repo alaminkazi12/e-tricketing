@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>P TICKET</title>
+  </head>
+  <body class="max-w-[1440px] mx-auto border-4 border-red-500">
+    <header class="border-2 border-red-500 mx-[134px] my-[55px]">
+      <!-- naviagion bar -->
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <!-- <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Item 1</a></li>
+              <li>
+                <a>Parent</a>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </li>
+              <li><a>Item 3</a></li>
+            </ul>
+          </div> -->
+          <a class="btn btn-ghost text-4xl raleway-800 text-[#030712]"
+            >P-Ticket</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-10 raleway-500 text-xl">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn border-1 border-green-500 rounded-xl px-8"
+            ><span class="text-xl raleway-700 text-[#1DD100]">Bus </span>
+            <img src="images/bus-icon.png" alt=""
+          /></a>
+        </div>
+      </div>
+      <!-- header hero section -->
+      <div class="relative">
+        <!-- banner section -->
+        <div
+          class="hero h-[550px]"
+          style="background-image: url(./images/banner.png)"
+        >
+          <div class="hero-overlay bg-opacity-40 rounded-[32px]"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-9/12">
+              <h1 class="mb-5 text-[64px] raleway-800">
+                End-to-End Travel with <br />
+                <span class="text-[#1DD100]">P Paribahan</span>
+              </h1>
+              <p class="mb-5 inter-400 text-xl">
+                Yes, you can run unit tests and view the results directly within
+                the app. The <br />
+                integrated testing features allow for a streamlined .
+              </p>
+              <button
+                class="btn btn-primary raleway-700 bg-[#1DD100] outline-none border-none text-black"
+              >
+                Buy Tickets
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- card container -->
+        <div class="flex gap-6 absolute -mt-10 mx-[100px]">
+          <!-- single card -->
+          <div
+            class="flex gap-4 justify-center items-center w-[308px] h-[108px] bg-white border-b-[3px] border-green-500 rounded-3xl"
+          >
+            <div>
+              <img src="images/people.png" alt="" />
+            </div>
+            <div>
+              <h3 class="inter-700 text-4xl">500K+</h3>
+              <p class="inter-400 text-[18px] text-gray-900">
+                Registered users
+              </p>
+            </div>
+          </div>
+          <!-- single card -->
+          <div
+            class="flex gap-4 justify-center items-center w-[308px] h-[108px] bg-white border-b-[3px] border-green-500 rounded-3xl"
+          >
+            <div>
+              <img src="images/ticket-cupon.png" alt="" />
+            </div>
+            <div>
+              <h3 class="inter-700 text-4xl">1.7 lacks</h3>
+              <p class="inter-400 text-[18px] text-gray-900">Tickets sold</p>
+            </div>
+          </div>
+          <!-- single card -->
+          <div
+            class="flex gap-4 justify-center items-center w-[308px] h-[108px] bg-white border-b-[3px] border-green-500 rounded-3xl"
+          >
+            <div>
+              <img src="images/stoppage.png" alt="" />
+            </div>
+            <div>
+              <h3 class="inter-700 text-4xl">80K+</h3>
+              <p class="inter-400 text-[18px] text-gray-900">Rental partners</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- offer section -->
+      <section class="mt-28">
+        <h2 class="raleway-700 text-[40px] text-center mb-[48px]">
+          Best offers for you
+        </h2>
+        <!-- card container -->
+        <div class="w-[573px] h-[220px] bg-[#FFBF0F] rounded-3xl">
+          <!-- col - 1 -->
+          <div>
+            <h3>15% OFF</h3>
+            <p>on your next purchase</p>
+            <p>use by january 2024</p>
+          </div>
+          <!-- col -2 -->
+          <div>
+            <h3>New15</h3>
+            <p>Coupon Code</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
