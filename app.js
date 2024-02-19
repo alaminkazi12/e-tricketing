@@ -16,7 +16,7 @@ let selectedSeats = 0;
 for (const seat of allSeats) {
   seat.addEventListener("click", function () {
     if (!seat.classList.contains("disabled") && selectedSeats < 4) {
-      seat.classList.add("bg-green"); // This should be "bg-green" instead of "bg-[#1DD100]"
+      seat.classList.add("bg-green");
       seat.classList.add("disabled");
       selectedSeats++;
       totalSeatsNumber--;
@@ -46,7 +46,20 @@ for (const seat of allSeats) {
       let grandTotal = totalPrice;
       document.getElementById("grand-total").innerText = grandTotal;
 
-      if (selectedSeats === 4) {
+      if (selectedSeats >= 1 && selectedSeats < 4) {
+        const inputPhoneNumber = document.getElementById("phoneNumber");
+        inputPhoneNumber.addEventListener("input", function () {
+          const value = inputPhoneNumber.value;
+          const valueInNumber = parseInt(value);
+          if (!isNaN(valueInNumber)) {
+            const submitButton = document.getElementById("submitButton");
+            submitButton.classList.remove("btn-disabled");
+          }
+        });
+      }
+
+      //   copun here
+      else if (selectedSeats === 4) {
         const couponButton = document.getElementById("coupon-btn");
         const couponBox = document.getElementById("coupon-box");
         couponButton.classList.remove("btn-disabled");

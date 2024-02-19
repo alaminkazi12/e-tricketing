@@ -320,7 +320,7 @@
             <div class="">
               <h4 class="raleway-600 text-2xl">Select Your Seat</h4>
               <hr class="border-t-2 border-gray-400 border-dashed my-6" />
-              <div class="flex justify-between item">
+              <div class="flex justify-between">
                 <div
                   class="inter-500 text-[18px] text-gray-400 flex items-center gap-2"
                 >
@@ -343,7 +343,7 @@
                 />
               </div>
               <!-- available seats section -->
-              <div class="grid grid-cols-5 items-center gap-y-6 gap-x-8">
+              <div class="grid grid-cols-5 items-center gap-y-6 gap-x-4">
                 <!-- row -->
                 <p class="text-[#7D8085]">A</p>
                 <button
@@ -572,7 +572,7 @@
             ></div>
 
             <!-- select your seat col -2 -->
-            <div class="flex-1">
+            <div class="">
               <h4 class="raleway-600 text-2xl">Select Your Seat</h4>
               <hr class="border-t-2 border-gray-400 border-dashed my-6" />
 
@@ -649,16 +649,14 @@
                   class="p-5 w-full outline-none border-2 border-gray-300 rounded-xl"
                   type="text"
                   name=""
-                  id=""
                   placeholder="Enter your name"
                 />
                 <p class="inter-600 text-[16px] mb-4">Phone Number*</p>
                 <input
-                  itemid="phoneNumber"
                   class="p-5 w-full outline-none border-2 border-gray-300 rounded-xl"
                   type="number"
                   name=""
-                  id=""
+                  id="phoneNumber"
                   placeholder="Enter your phone number"
                 />
                 <p class="inter-600 text-[16px] mb-4">Email ID</p>
@@ -666,12 +664,11 @@
                   class="p-5 w-full outline-none border-2 border-gray-300 rounded-xl"
                   type="email"
                   name=""
-                  id=""
                   placeholder="Enter your email id"
                 />
                 <button
                   onclick="my_modal_4.showModal()"
-                  class="bg-[#1DD100] text-white py-4 px-6 rounded-xl text-[16px] inter-600 w-full my-6"
+                  class="bg-[#1DD100] text-white py-4 px-6 rounded-xl text-[16px] inter-600 w-full my-6 btn-disabled"
                   id="submitButton"
                 >
                   Next
