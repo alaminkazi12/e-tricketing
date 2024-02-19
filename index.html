@@ -612,7 +612,10 @@
                     </h3>
                   </div>
                   <!-- coupon box -->
-                  <div class="flex justify-between m-6">
+                  <div
+                    id="coupon-box-container"
+                    class="flex justify-between m-6"
+                  >
                     <input
                       id="coupon-box"
                       class="flex-1 px-6 py-4 outline-none rounded-xl input-disabled"
@@ -627,7 +630,7 @@
                     </button>
                   </div>
                   <!-- Grand total price -->
-                  <div class="flex justify-between">
+                  <div class="flex justify-between" id="copun-part">
                     <h3 class="inter-500 text-[16px]">Grand Total</h3>
                     <h3
                       class="inter-500 text-[16px]"
@@ -651,6 +654,7 @@
                 />
                 <p class="inter-600 text-[16px] mb-4">Phone Number*</p>
                 <input
+                  itemid="phoneNumber"
                   class="p-5 w-full outline-none border-2 border-gray-300 rounded-xl"
                   type="number"
                   name=""
@@ -667,6 +671,7 @@
                 />
                 <button
                   class="bg-[#1DD100] text-white py-4 px-6 rounded-xl text-[16px] inter-600 w-full my-6 btn-disabled"
+                  id="submitButton"
                 >
                   Next
                 </button>

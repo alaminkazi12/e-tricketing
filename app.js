@@ -56,15 +56,28 @@ for (const seat of allSeats) {
           if (couponBoxValue === "NEW15") {
             const couponGrandTotal = totalPrice - totalPrice * 0.15;
             document.getElementById("grand-total").innerText = couponGrandTotal;
+            const couponBoxContainer = document.getElementById(
+              "coupon-box-container"
+            );
+            couponBoxContainer.classList.add("hidden");
           } else if (couponBoxValue === "Couple 20") {
             const couponGrandTotal = totalPrice - totalPrice * 0.2;
             document.getElementById("grand-total").innerText = couponGrandTotal;
+            const couponBoxContainer = document.getElementById(
+              "coupon-box-container"
+            );
+            couponBoxContainer.classList.add("hidden");
           }
         });
       }
     }
   });
 }
+
+const cButton = document.getElementById("coupon-btn");
+const cButtonClass = cButton.classList;
+const phoneNumber = document.getElementById("phoneNumber");
+const submitButton = document.getElementById("submitButton");
 
 function calculateTotalPrice() {
   const totalPrice = 550 * selectedSeats;

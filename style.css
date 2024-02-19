@@ -82,9 +82,10 @@
 
 .btn-disabled {
   pointer-events: none;
+  background-color: #aaa !important;
 }
 .input-disabled {
-  background-color: #f0f0f0;
-  color: #999;
+  background-color: #f0f0f0 !important;
+  color: #999 !important;
   cursor: not-allowed;
 }
