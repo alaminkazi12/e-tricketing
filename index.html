@@ -95,6 +95,7 @@
                 integrated testing features allow for a streamlined .
               </p>
               <button
+                onclick="goToParibahan()"
                 class="btn btn-primary raleway-700 bg-[#1DD100] outline-none border-none text-black"
               >
                 Buy Tickets
@@ -230,12 +231,13 @@
       </section>
       <!-- Ticketing section -->
       <section
+        id="paribahan-section"
         class="border-t-[3px] border-[#1DD100] rounded-t-[88px] mt-36 bg-[#F7F8F8]"
       >
         <h2 class="raleway-700 text-5xl text-center mt-28">P.H Paribahan</h2>
         <p class="text-center w-1/2 mx-auto mt-6 text-xl">
-          Yes, you can run unit tests and view the results directly within the
-          app. The integrated testing features allow for a streamlined .
+          Embark on Boundless Adventures: Your Gateway to Exploration Begins
+          with PH Paribahan Online Ticketing Services - Where Every Mile Counts!
         </p>
 
         <!-- greenline paribahan -->
@@ -260,7 +262,7 @@
               <div class="flex gap-2 bg-[#DDF8D9] px-5 py-3 rounded-xl">
                 <img src="images/seat-green.png" alt="" />
                 <p class="text-[#1DD100] text-[18px] inter-500">
-                  <span class="pr-2">40</span>Seats left
+                  <span id="total-seats" class="pr-2">40</span>Seats left
                 </p>
               </div>
             </div>
@@ -345,220 +347,220 @@
                 <!-- row -->
                 <p class="text-[#7D8085]">A</p>
                 <button
-                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085]"
+                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085] seatButton"
                 >
                   A1
                 </button>
                 <button
-                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085]"
+                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085] seatButton"
                 >
                   A2
                 </button>
                 <button
-                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085]"
+                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085] seatButton"
                 >
                   A3
                 </button>
                 <button
-                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085]"
+                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085] seatButton"
                 >
                   A4
                 </button>
                 <!-- row -->
                 <p class="text-[#7D8085]">B</p>
                 <button
-                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085]"
+                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085] seatButton"
                 >
                   B1
                 </button>
                 <button
-                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085]"
+                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085] seatButton"
                 >
                   B2
                 </button>
                 <button
-                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085]"
+                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085] seatButton"
                 >
                   B3
                 </button>
                 <button
-                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085]"
+                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085] seatButton"
                 >
                   B4
                 </button>
                 <!-- row -->
                 <p class="text-[#7D8085]">C</p>
                 <button
-                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085]"
+                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085] seatButton"
                 >
                   C1
                 </button>
                 <button
-                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085]"
+                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085] seatButton"
                 >
                   C2
                 </button>
                 <button
-                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085]"
+                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085] seatButton"
                 >
                   C3
                 </button>
                 <button
-                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085]"
+                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085] seatButton"
                 >
                   C4
                 </button>
                 <!-- row -->
                 <p class="text-[#7D8085]">D</p>
                 <button
-                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085]"
+                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085] seatButton"
                 >
                   D1
                 </button>
                 <button
-                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085]"
+                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085] seatButton"
                 >
                   D2
                 </button>
                 <button
-                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085]"
+                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085] seatButton"
                 >
                   D3
                 </button>
                 <button
-                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085]"
+                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085] seatButton"
                 >
                   D4
                 </button>
                 <!-- row -->
                 <p class="text-[#7D8085]">E</p>
                 <button
-                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085]"
+                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085] seatButton"
                 >
                   E1
                 </button>
                 <button
-                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085]"
+                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085] seatButton"
                 >
                   E2
                 </button>
                 <button
-                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085]"
+                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085] seatButton"
                 >
                   E3
                 </button>
                 <button
-                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085]"
+                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085] seatButton"
                 >
                   E4
                 </button>
                 <!-- row -->
                 <p class="text-[#7D8085]">F</p>
                 <button
-                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085]"
+                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085] seatButton"
                 >
                   F1
                 </button>
                 <button
-                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085]"
+                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085] seatButton"
                 >
                   F2
                 </button>
                 <button
-                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085]"
+                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085] seatButton"
                 >
                   F3
                 </button>
                 <button
-                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085]"
+                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085] seatButton"
                 >
                   F4
                 </button>
                 <!-- row -->
                 <p class="text-[#7D8085]">G</p>
                 <button
-                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085]"
+                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085] seatButton"
                 >
                   G1
                 </button>
                 <button
-                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085]"
+                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085] seatButton"
                 >
                   G2
                 </button>
                 <button
-                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085]"
+                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085] seatButton"
                 >
                   G3
                 </button>
                 <button
-                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085]"
+                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085] seatButton"
                 >
                   G4
                 </button>
                 <!-- row -->
                 <p class="text-[#7D8085]">H</p>
                 <button
-                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085]"
+                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085] seatButton"
                 >
                   H1
                 </button>
                 <button
-                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085]"
+                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085] seatButton"
                 >
                   H2
                 </button>
                 <button
-                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085]"
+                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085] seatButton"
                 >
                   H3
                 </button>
                 <button
-                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085]"
+                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085] seatButton"
                 >
                   H4
                 </button>
                 <!-- row -->
                 <p class="text-[#7D8085]">I</p>
                 <button
-                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085]"
+                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085] seatButton"
                 >
                   I1
                 </button>
                 <button
-                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085]"
+                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085] seatButton"
                 >
                   I2
                 </button>
                 <button
-                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085]"
+                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085] seatButton"
                 >
                   I3
                 </button>
                 <button
-                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085]"
+                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085] seatButton"
                 >
                   I4
                 </button>
                 <!-- row -->
                 <p class="text-[#7D8085]">J</p>
                 <button
-                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085]"
+                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085] seatButton"
                 >
                   J1
                 </button>
                 <button
-                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085]"
+                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085] seatButton"
                 >
                   J2
                 </button>
                 <button
-                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085]"
+                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085] seatButton"
                 >
                   J3
                 </button>
                 <button
-                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085]"
+                  class="bg-[#E6E6E7] rounded-xl w-[110px] h-[56px] text-[#7D8085] seatButton"
                 >
                   J4
                 </button>
@@ -580,7 +582,9 @@
                 <div class="flex justify-between">
                   <h3 class="inter-500 text-[16px]">
                     Seats
-                    <span class="text-white bg-[#1DD100] px-2 rounded-sm"
+                    <span
+                      id="selected-seats"
+                      class="text-white bg-[#1DD100] px-2 rounded-sm"
                       >0</span
                     >
                   </h3>
@@ -590,12 +594,9 @@
                 <hr class="border-t-2 border-gray-400 border-dashed my-6" />
                 <div>
                   <ul
+                    id="selected-seats-container"
                     class="grid grid-cols-3 gap-x-32 items-center text-center"
-                  >
-                    <li>C2</li>
-                    <li>Economoy</li>
-                    <li>500</li>
-                  </ul>
+                  ></ul>
                   <hr class="border-t-2 border-gray-400 border-dashed my-6" />
                 </div>
                 <!-- TOTAL PRICE    section-->
@@ -607,30 +608,32 @@
                       class="inter-500 text-[16px]"
                       class="inter-500 text-[16px]"
                     >
-                      BDT <span>0</span>
+                      BDT <span id="total-price">0</span>
                     </h3>
                   </div>
                   <!-- coupon box -->
                   <div class="flex justify-between m-6">
                     <input
+                      id="coupon-box"
                       class="flex-1 px-6 py-4 outline-none rounded-xl"
                       type="text"
                       placeholder="Have any coupon?"
                     />
                     <button
-                      class="bg-[#1DD100] text-white py-4 px-6 rounded-xl text-[16px] inter-600"
+                      id="coupon-btn"
+                      class="bg-[#1DD100] text-white py-4 px-6 rounded-xl text-[16px] inter-600 btn-disabled"
                     >
                       Apply
                     </button>
                   </div>
-                  <!-- total price -->
+                  <!-- Grand total price -->
                   <div class="flex justify-between">
                     <h3 class="inter-500 text-[16px]">Grand Total</h3>
                     <h3
                       class="inter-500 text-[16px]"
                       class="inter-500 text-[16px]"
                     >
-                      BDT <span>0</span>
+                      BDT <span id="grand-total">0</span>
                     </h3>
                   </div>
                 </div>
@@ -663,7 +666,7 @@
                   placeholder="Enter your email id"
                 />
                 <button
-                  class="bg-[#1DD100] text-white py-4 px-6 rounded-xl text-[16px] inter-600 w-full my-6"
+                  class="bg-[#1DD100] text-white py-4 px-6 rounded-xl text-[16px] inter-600 w-full my-6 btn-disabled"
                 >
                   Next
                 </button>
@@ -708,5 +711,6 @@
         </ul>
       </div>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>

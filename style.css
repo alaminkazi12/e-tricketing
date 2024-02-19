@@ -71,3 +71,15 @@
   font-style: normal;
   font-variation-settings: "slnt" 0;
 }
+
+.bg-green {
+  background-color: #1dd100 !important;
+}
+.disabled {
+  pointer-events: none;
+  background-color: #aaa;
+}
+
+.btn-disabled {
+  pointer-events: none;
+}
