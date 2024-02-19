@@ -83,3 +83,8 @@
 .btn-disabled {
   pointer-events: none;
 }
+.input-disabled {
+  background-color: #f0f0f0;
+  color: #999;
+  cursor: not-allowed;
+}

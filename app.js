@@ -41,6 +41,27 @@ for (const seat of allSeats) {
 
       const totalPrice = 550 * selectedSeats;
       document.getElementById("total-price").innerText = calculateTotalPrice();
+
+      //   grand total
+      let grandTotal = totalPrice;
+      document.getElementById("grand-total").innerText = grandTotal;
+
+      if (selectedSeats === 4) {
+        const couponButton = document.getElementById("coupon-btn");
+        const couponBox = document.getElementById("coupon-box");
+        couponButton.classList.remove("btn-disabled");
+        couponBox.classList.remove("input-disabled");
+        couponButton.addEventListener("click", function () {
+          const couponBoxValue = couponBox.value;
+          if (couponBoxValue === "NEW15") {
+            const couponGrandTotal = totalPrice - totalPrice * 0.15;
+            document.getElementById("grand-total").innerText = couponGrandTotal;
+          } else if (couponBoxValue === "Couple 20") {
+            const couponGrandTotal = totalPrice - totalPrice * 0.2;
+            document.getElementById("grand-total").innerText = couponGrandTotal;
+          }
+        });
+      }
     }
   });
 }
