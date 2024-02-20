@@ -80,6 +80,8 @@ for (const seat of allSeats) {
               "coupon-box-container"
             );
             couponBoxContainer.classList.add("hidden");
+          } else {
+            alert("Please provide the right copupon");
           }
         });
       }
